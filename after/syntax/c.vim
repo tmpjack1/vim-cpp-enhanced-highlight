@@ -275,13 +275,13 @@ hi def link cBoolean Boolean
 
 " Operators
 "syn match cOperator	"\(<<\|>>\|[-+*/%&^|<>!=]\)="
-syn match cOperator	"<<\|>>\|&&\|||\|++\|--\|->"
-syn match cOperator	"[.!~*&%<>^|=,+-]"
+syn match cOperator	    "<<\|>>\|&&\|||\|++\|--\|->"
+syn match cOperator	    "[.!~*&%<>^|=,+-]"
 "syn match cOperator	"/[^/*=]"me=e-1
 "syn match cOperator	"/$"
-"syn match cOperator "&&\|||"
+"syn match cOperator    "&&\|||"
 "syn match cOperator	"[][]"
-syn match cOperator "::"
+syn match cOperator     "::"
 hi cOperator  ctermfg=Red guifg=Red
 
 "" Preprocs
