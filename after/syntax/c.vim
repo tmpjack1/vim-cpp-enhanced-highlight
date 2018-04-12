@@ -275,13 +275,15 @@ hi def link cBoolean Boolean
 
 " Operators
 "syn match cOperator	"\(<<\|>>\|[-+*/%&^|<>!=]\)="
-"syn match cOperator	"<<\|>>\|&&\|||\|++\|--\|->"
-"syn match cOperator	"[.!~*&%<>^|=,+-]"
+syn match cOperator	"<<\|>>\|&&\|||\|++\|--\|->"
+syn match cOperator	"[.!~*&%<>^|=,+-]"
 "syn match cOperator	"/[^/*=]"me=e-1
 "syn match cOperator	"/$"
 "syn match cOperator "&&\|||"
 "syn match cOperator	"[][]"
-"
+syn match cOperator "::"
+hi cOperator  ctermfg=Red guifg=Red
+
 "" Preprocs
 "syn keyword cDefined defined contained containedin=cDefine
 "hi def link cDefined cDefine
